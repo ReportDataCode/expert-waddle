@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Message</title>
 </head>
+// function is a great abstraction to use.
 
 <body>
     <script>
@@ -14,10 +15,20 @@
         function getMessage(name) {
             return 'Hello' + name + '...';
         }
+
         const message = getMessage('Ornella')
         document.write(message);
 
+        function displayDone() {
+            console.log('Done!');
+        }
+
         //TODO: Add setTimeout code here
+        setTimeout(
+            () => {
+                document.write('...Hello again!')
+            }, 2000
+        )
     </script>
 </body>
 
